@@ -43,7 +43,7 @@ LABEL maintainer="Mahmoud Zalt <mahmoud@zalt.me>"
 ###########################################################################
 
 # Install Php Redis Extension
-printf "\n" | pecl install -o -f redis \
+pecl install -o -f redis \
 &&  rm -rf /tmp/pear \
 &&  docker-php-ext-enable redis \
 
